@@ -1,5 +1,3 @@
-import time
-
 from buttons_generator import buttons_generator
 from constants import *
 from pets import *
@@ -45,7 +43,7 @@ class User:
             return int(self.power * self.pet.power * self.pet.damage)
 
     def take_damage(self, received_damage):  # Получение урона
-        self.hp -= int(max(received_damage - ((self.defence * self.pet.defence) // 2), 0))
+        self.hp -= int(max(received_damage - ((self.defence * self.pet.defence) / 2), 0))
         return received_damage
 
     def add_xp(self, add):  # получение опыта

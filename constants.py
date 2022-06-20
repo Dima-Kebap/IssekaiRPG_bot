@@ -70,8 +70,3 @@ LOOT = {"Клык": Item(FANG),
         "🍬": HealItem(CANDY),
         "Мидии": HealItem(MUSSELS),
         "🥔": HealItem(POTATO)}
-
-
-
-
-
